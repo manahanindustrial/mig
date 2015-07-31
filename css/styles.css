@@ -39,6 +39,13 @@ body {
 
    /*header*/
 #logo p{
+  font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: #161616;
+}
+
+#logo p a{
    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, sans-serif;
    font-size: 36px;
    font-weight: normal;
