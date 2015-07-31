@@ -1,0 +1,709 @@
+/* ===============================
+   Author: Christopher Manahan
+   Start Date:   March 4th 2015
+   Current Edit: March 14th 2015
+   End Date: 
+
+   Notes: Manahan Industrial Group
+   
+   Colour Palette:
+   ---------------
+   dark grey: #161616
+   off white: #f9f9f9
+   reddish: #d65959
+   light grey: #dedede
+
+   =============================== */
+
+/* General */
+body {
+   position: relative;
+   background: #f9f9f9;
+   color: black;
+   font-size: 14px;
+   font-family: 'Source Sans Pro', 'Helvetica Neue', helvetica, arial, sans-serif;
+   -webkit-font-smoothing: antialiased;
+   text-rendering:optimizelegibility;
+   width: 100%;
+   max-width: 3200px;
+   margin: 0 auto;
+}
+
+.container{
+   width: 65%;
+   margin: 0 auto;
+   position: relative;
+}
+
+/* Typography */
+
+   /*header*/
+#logo p{
+   font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, sans-serif;
+   font-size: 36px;
+   font-weight: normal;
+   color: #161616;
+}
+
+.main{
+   font-size: 24px;
+}
+
+   /*footer*/
+footer{
+   color: #f9f9f9;
+   font-size: 20px;
+}
+
+footer address{
+   font-weight: normal;
+   font-size: 14px;
+   font-style: normal;
+}
+
+footer address strong{
+   font-size: 24px;
+   color: #d65959;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.footright p{
+   font-size: 24px;
+   color: #d65959;
+}
+
+.footright p em{
+   font-size: 14px;
+   color: #f9f9f9;
+   font-style: normal;
+}
+
+#copyright, #webmaster{
+   font-size: 12px;
+}
+
+   /*navigation menu*/
+a:link{
+   color: #161616;
+   text-decoration: none;
+}
+
+a:visited{
+   color: #161616;
+}
+
+a:hover{
+   color: #d65959;
+}
+
+   /*Index Page tabs*/
+.tabs nav a{
+   font-size: 30px;
+}
+
+.tabs nav a p{
+   font-size: 18px
+}
+
+#tab-1:hover, #tab-2:hover, #tab-3:hover{
+   color: #d65959;
+}
+
+#tab-1, #tab-2, #tab-3{
+   color: #f9f9f9;
+}
+
+.tabs nav a:hover{
+   font-size: 36px;
+}
+
+.tabs nav a:hover strong, .tabs nav a:hover em{
+   color: #f9f9f9;
+   font-size: 18px;
+   font-weight: normal;
+}
+
+   /*Index Page describe section*/
+.describe{
+   font-size: 20px;
+   color: #161616;
+}
+
+   /*Index Page PTI Section*/
+.pti p{
+   font-size: 20px;
+}
+
+   /*contact page*/
+#contact-head h2{
+   font-size: 36px;
+}
+
+#filetree{
+   font-size: 20px;
+   color: #161616;
+}
+
+   /*SALES pages*/
+.pagetitle h1{
+   font-size: 64px;
+   color: #f9f9f9;
+}
+
+/* Header */
+header{
+   position: fixed;
+   top: 0px;
+   height: 113px;
+   width: 100%;
+   max-width: 3200px;
+   background-image: -webkit-linear-gradient(left, rgba(249,249,249,0.2), rgba(249,249,249,1), rgba(249,249,249,0.2));
+   background-image: -moz-linear-gradient(left, rgba(249,249,249,0.2), rgba(249,249,249,1), rgba(249,249,249,0.2));
+   background-image: -ms-linear-gradient(left, rgba(249,249,249,0.2), rgba(249,249,249,1), rgba(249,249,249,0.2));
+   background-image: -o-linear-gradient(left, rgba(249,249,249,0.2), rgba(249,249,249,1), rgba(249,249,249,0.2));
+   z-index: 3;
+   border-top: 10px #161616 solid;
+}
+
+#logo{
+   background: url(../images/m.png) left no-repeat;
+   height: 113px;
+   width: 100%;
+   float: left;
+}
+
+#logo p{
+   margin: 0;
+   height: 50px;
+   width: 5100px;
+   padding-right: 80%;
+   margin-left: 113px;
+   position: relative;
+   top: 10px;
+   border-bottom: 2px #161616 solid;
+}
+
+#logo p a:hover{
+   color: #d65959;
+   -o-transition:.5s;
+   -ms-transition:.5s;
+   -moz-transition:.5s;
+   -webkit-transition:.5s;
+   transition: .5s;
+}
+
+/*Navigation Bar*/
+#navbar{
+   height: 53px;
+   float: left;
+   width: 100%;
+   position: relative;
+   top: -53px;
+   text-align: center;
+   border-bottom: 2px #161616 solid;
+}
+
+header nav ul{
+   display: inline-block;
+   position: relative;
+   margin: 0 auto;
+   list-style: none;
+   padding: 0;
+}
+
+header nav ul li {
+   float: left;
+   height: 48px;;
+}
+
+header nav ul li:hover {
+   border-bottom: 5px #d65959 solid
+}
+
+header nav ul li a{
+   display: block; 
+   text-decoration: none;
+   padding: 10px 40px;
+}
+
+   /*drop down menu*/
+header nav ul ul {
+   display: none;
+   background: rgba(249, 249, 249, 0.7);
+}
+
+header nav ul ul a{
+   padding: 5px 10px;
+}
+
+header nav ul ul li {
+   float: none; 
+   text-align: left;
+}
+
+header nav ul ul li:hover{
+   border-bottom: none;
+}
+
+header nav ul li a:hover, header nav ul ul li a:hover{
+   -o-transition:.5s;
+   -ms-transition:.5s;
+   -moz-transition:.5s;
+   -webkit-transition:.5s;
+   transition: .5s;
+}
+
+   /*fade in drop down*/
+
+header nav ul li:hover > ul {
+   display: block;
+   -webkit-animation: fadein .5s; /* Safari and Chrome */
+   -moz-animation: fadein .5s; /* Firefox */
+   -ms-animation: fadein 5s; /* Internet Explorer */
+   -o-animation: fadein .5s; /* Opera */
+   animation: fadein .5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*individual drop down menu positions*/
+#sales, #rental, #services{
+   position: absolute;
+   top: 100%;
+   z-index: 0;
+}
+
+#sales{
+   left: 9%;
+}
+
+#rental{
+   left: 27%;
+}
+
+#services{
+   left: 45%;
+}
+
+/* Footer */
+
+footer{
+   background: #161616;
+   position: relative;
+}
+
+footer .foothead{
+   background: #161616;
+   padding: 20px 0;
+}
+
+footer .foothead address{
+   float: left;
+   margin: 20px 0;
+   padding: 10px 10px;
+   border-left: 1px #f9f9f9 solid;
+}
+
+footer .foothead .footright{
+   float: right;
+   height: 177px;
+   text-align: right;
+   margin: 20px 0;
+   padding: 10px 10px;
+   border-right: 1px #f9f9f9 solid;
+}
+
+footer .foothead .footright p{
+   width: 250px;
+}
+
+footer .foothead .footright p em{
+   position: relative;
+   top: 80px;
+}
+
+footer .foothead .footright p, footer .foothead .footright em{
+   margin: 0;
+}
+
+footer #copyright p{
+   float: left;
+}
+
+footer #webmaster p{
+   float: right;
+}
+
+/*INDEX PAGE START*/
+
+/* Hero */
+
+.hero{
+   position: relative;
+   width: 100%;
+   height: 600px;
+   overflow: hidden;
+   margin-top: 10px;
+   padding: 0;
+   height: 600px;
+}
+
+.photo{
+   z-index: -1;
+   position:absolute;
+   -webkit-animation: round 24s infinite; /* Safari and Chrome */
+   -moz-animation: round 24s infinite; /* Firefox */
+   -ms-animation: round 24s infinite; /* Internet Explorer */
+   -o-animation: round 24s infinite; /* Opera */
+   animation: round 24s infinite;
+   opacity: 0;
+}
+
+@-webkit-keyframes round{   
+   25%{opacity:1;}
+   40%{opacity:0;}
+} 
+
+@-moz-keyframes round{   
+   25%{opacity:1;}
+   40%{opacity:0;}
+} 
+
+@-ms-keyframes round{   
+   25%{opacity:1;}
+   40%{opacity:0;}
+} 
+
+@-o-keyframes round{   
+   25%{opacity:1;}
+   40%{opacity:0;}
+}
+
+@keyframes round{ 
+   25%{opacity:1;}
+   40%{opacity:0;}
+} 
+
+.hero img:nth-child(4){-webkit-animation-delay:0s; -moz-animation-delay:0s; -ms-animation-delay:0s; -o-animation-delay:0s; animation-delay:0s;}
+.hero img:nth-child(3){-webkit-animation-delay:6s; -moz-animation-delay:6s; -ms-animation-delay:6s; -o-animation-delay:6s; animation-delay:6s;}
+.hero img:nth-child(2){-webkit-animation-delay:12s; -moz-animation-delay:12s; -ms-animation-delay:12s; -o-animation-delay:12s; animation-delay:12s;}
+.hero img:nth-child(1){-webkit-animation-delay:18s; -moz-animation-delay:18s; -ms-animation-delay:18s; -o-animation-delay:18s; animation-delay:18s;}
+
+/*horizontal lines*/
+
+.horizontal{  
+   border: 0;
+   height: 2px;
+   background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+   background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+   background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+   background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+/* Tabs */
+
+.center{
+   width: 80%;
+   margin: 0 auto;
+}
+
+.tabs nav ul{
+   margin: 0;
+   height: 341px;
+   padding: 0;
+   position: relative;
+   display: -moz-flex;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -moz-box-pack: center;
+   -ms-flex-pack: center; 
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+.tabs nav ul li{
+   float: left;
+   width: 300px;
+   margin: 20px 1% 13px;
+   list-style: none;
+}
+
+.tabs nav a{
+   display: block;
+   height: 300px;
+   border: #161616 5px solid;
+   border-radius: 300px;
+   text-align: center;
+   box-shadow: 5px 5px 5px #888888;
+}
+
+.tabs nav a p{
+   position: relative;
+   top: -20px;
+}
+
+.tabs nav ul a em, .tabs nav ul a strong{
+   display: none;
+}
+
+   /*Tab Hover Effects*/
+.tabs nav a:hover{
+   -o-transition:.5s;
+   -ms-transition:.5s;
+   -moz-transition:.5s;
+   -webkit-transition:.5s;
+   transition: .5s;
+}
+
+      /*Tab Head*/
+.tabs nav a:hover .tabhead{
+   display: block;
+   position: relative;
+   text-align: center;
+   top: 30%;
+}
+
+.tabs nav a:hover > p{
+   display: none;
+}
+
+      /*Read More*/
+.tabs nav a:hover > em{
+   display: block;
+   position: relative;
+   text-align: center;
+   top: 50%;
+}
+
+      /*Description*/
+.tabs nav a:hover > strong{
+   display: block;
+   position: relative;
+   text-align: center;
+   top: 30%;
+}
+
+#tab-1{
+   background: url(../images/tabgears.png) top left no-repeat;
+}
+
+#tab-1:hover{
+   background: #161616;
+}
+
+#tab-2{
+   background: url(../images/tabsmoke.png) top left no-repeat;
+}
+
+#tab-2:hover{
+   background: #161616;
+}
+
+#tab-3{
+   background: url(../images/tabconstruction.png) top left no-repeat;
+}
+
+#tab-3:hover{
+   background: #161616;
+}
+
+/*Describe section*/
+.describe{
+   padding: 50px 15%;
+   text-align: center;
+}
+
+.describe p{
+   margin: 0 auto;
+   width: 50%;
+}
+
+/*PTI section*/
+.pti{
+   padding: 0 10%;
+}
+
+.pti a{
+   float: left;
+}
+
+.pti p{
+   float: right;
+   text-align: right;
+   padding-top: 45px;
+}
+
+/*INDEX PAGE END*/
+
+/*SALES PAGE START*/
+.headimage{
+   position: relative;
+   height: 400px;
+   overflow: hidden;
+}
+
+.pagetitle{
+   position: relative;
+   bottom: 43px;
+   width: 100%;
+   margin: 0 auto;
+   background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+   background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+   background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+   background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+.pagetitle h1{
+   text-align: center;
+}
+
+.filetree{
+   position: relative;
+   bottom: 50px;
+}
+
+.filetree ol{
+   list-style: none;
+}
+
+.filetree li input{
+    position: absolute;
+    left: 0;
+    margin-left: 0;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+    height: 1em;
+    width: 1em;
+    top: 0;
+}
+
+.filetree li label{
+    position: relative;
+    cursor: pointer;
+    display: block;
+    list-style: none;
+}
+
+.filetree li label img{
+   position: relative;
+   height: 100px;
+   width: 100px;
+   border-radius: 100px;
+}
+
+.filetree li input + ol{
+    display: block;
+    list-style: none;
+}
+
+.filetree li input + ol > li {
+    display: none;
+}
+
+.filetree li.file a {
+    text-decoration: none;
+    display: block;
+}
+
+.filetree li input:checked + ol > li{
+  display: block;
+   -webkit-animation: slidedown .5s; /* Safari and Chrome */
+   -moz-animation: slidedown .5s; /* Firefox */
+   -ms-animation: slidedown 5s; /* Internet Explorer */
+   -o-animation: slidedown .5s; /* Opera */
+   animation: slidedown .5s;
+}
+
+@keyframes slidedown {
+  from {
+    font-size: 0px;
+  }
+
+  to {
+    font-size: 1em;
+  }
+}
+
+.lefttree{
+   float: left;
+   width: 30%;
+}
+
+.righttree{
+   float: right;
+   width: 30%;
+   text-align: right;
+}
+
+/*CONTACT PAGE START*/
+
+#contact-head{
+   margin-top: 165px;
+   position: relative;
+   height: 150px;
+   background: #dedede;
+   top: -25px;
+   z-index: -1;
+}
+
+#contact-head h2{
+   position: relative;
+   top: 50px;
+}
+
+.contact address{
+   margin-left: 20px;
+}
+
+.contact address p{
+   margin-left: 20px;
+}
+
+/*CONTACT PAGE END*/
+
+/* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+
+
+
+
